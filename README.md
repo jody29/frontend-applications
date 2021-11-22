@@ -17,7 +17,15 @@ The concept for this project is to render a map of all the municipalities in the
 ## ⚙️ Installation
 Clone the repo to your own device
 ```bash
-$ git clone https://github.com/jody29/frontend-data.git
+$ git clone https://github.com/jody29/frontend-applications.git
+```
+install the npm dependencies
+```bash
+$ npm install
+```
+run the server on your browser
+```bash
+$ npm start
 ```
 
 ## :pray: Wishlist
