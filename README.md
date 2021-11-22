@@ -4,12 +4,12 @@
 
 
 ## Table of contents
-* [💡 Concept](https://github.com/jody29/frontend-data/blob/main/README.md#-concept)
-* [⚙️ Installation](https://github.com/jody29/frontend-data#%EF%B8%8F-installation)
-* [:pray: Wishlist](https://github.com/jody29/frontend-data#pray-wishlist)
-* [:white_check_mark: Rubric](https://github.com/jody29/frontend-data#white_check_mark-rubric)
-* [:information_source: Resources](https://github.com/jody29/frontend-data#information_source-resources)
-* [:copyright: License](https://github.com/jody29/frontend-data#copyright-license)
+* [💡 Concept](https://github.com/jody29/frontend-applications/blob/main/README.md#-concept)
+* [⚙️ Installation](https://github.com/jody29/frontend-applications#%EF%B8%8F-installation)
+* [:pray: Wishlist](https://github.com/jody29/frontend-applications#pray-wishlist)
+* [:white_check_mark: Rubric](https://github.com/jody29/frontend-applications#white_check_mark-rubric)
+* [:information_source: Resources](https://github.com/jody29/frontend-applications#information_source-resources)
+* [:copyright: License](https://github.com/jody29/frontend-applications#copyright-license)
 
 ## 💡 Concept
 The concept for this project is to render a map of all the municipalities in the Netherlands. Every municipality gets a color which represents the percentage of people who are vaccinated in that municipality. This will show in which municipalities the most people are vaccinated. This will also show which municipalities have a low vaccination percentage
