@@ -1,8 +1,7 @@
 ### Frontend Data
 
-# Vaccination percentage per municipality
-![preview](assets/img/preview.png)
-[Live version](https://jody29.github.io/frontend-data/)
+# project name
+
 
 ## Table of contents
 * [💡 Concept](https://github.com/jody29/frontend-data/blob/main/README.md#-concept)
@@ -22,8 +21,7 @@ $ git clone https://github.com/jody29/frontend-data.git
 ```
 
 ## :pray: Wishlist
-* When clicking on a municipality, zoom to the municipality
-* Have the geojson file of 2021, because 3 municipalities have fused into one
+
 
 ## :white_check_mark: Assignment
 Create a data visualisation (using the d3 library) based on given data where data can be explored through interaction using enter(), update(), and exit().
