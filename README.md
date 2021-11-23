@@ -32,7 +32,7 @@ $ npm start
 
 
 ## :white_check_mark: Assignment
-Create a data visualisation (using the d3 library) based on given data where data can be explored through interaction using enter(), update(), and exit().
+Create a client-side application in JavaScript which dynamically renders data to views using either a front-end framework or system created by you. Reflect on the merits and costs of frameworks together.
 <table>
   <thead>
     <tr>
