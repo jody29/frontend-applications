@@ -1,18 +1,14 @@
 import './App.css';
-import { useVaccin } from './components/vaccinData';
-
-const name = 'hello'
+import Data from './components/vaccinData';
+import { VaccinProvider } from './providers/VaccinContext';
 
 function App() {
-
-  const vaccinData = useVaccin()
-
   return (
-    <div className="App">
-      <h1>Worldmap</h1>
-      <h2>{name}</h2>
-      <h2>{vaccinData}</h2>
-    </div>
+    <VaccinProvider>
+      <div className="App">
+        <Data />
+      </div>
+    </VaccinProvider>
   );
 }
 
