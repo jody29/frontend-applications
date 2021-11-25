@@ -1,4 +1,4 @@
-### Frontend Data
+### Frontend Applications
 
 # project name
 
