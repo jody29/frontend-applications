@@ -4,7 +4,18 @@ import VaccinContext from "../providers/VaccinContext"
 const Data = () => {
     const json = useContext(VaccinContext)
 
-    return <h1>{JSON.stringify(json, null, 3)}</h1>
+    // const data = json ? json.map(obj => obj.Vaccination_coverage_completed) : 'data loading...'
+
+    // const data = json.reduce((arr, obj) => {
+    //     arr.push({ percentage: obj.Vaccination_coverage_completed, region: obj.Region_name })
+    // })
+
+    const data = json ? json.reduce((arr, obj) => {
+        arr.push({ percentage: obj.Vaccination_coverage_completed, region: obj.Region_name })
+        return arr
+    }, []) : 'Loading...'
+
+    return <h1>{JSON.stringify(data, null, 3)}</h1>
 }
 
 export default Data
