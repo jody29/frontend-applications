@@ -1,0 +1,11 @@
+path {
+    stroke: white;
+    stroke-width: .5px;
+    opacity: .7;
+}
+
+path:hover {
+    stroke: white;
+    stroke-width: 3px;
+    opacity: 1;
+}

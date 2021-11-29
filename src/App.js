@@ -1,14 +1,17 @@
 import './App.css';
-import Data from './components/vaccinData';
-import { VaccinProvider } from './providers/VaccinContext';
+import { useData } from './components/useData';
+import { useWorldData } from './components/useWorldData';
+import { Towns } from './components/map'
+// import Data from './components/vaccinData';
+// import { VaccinProvider } from './providers/VaccinContext';
 
 function App() {
+  const data = useData()
+
   return (
-    <VaccinProvider>
       <div className="App">
-        <Data />
+        <Towns />
       </div>
-    </VaccinProvider>
   );
 }
 
