@@ -18,7 +18,7 @@ export const Marks = ({
            const d = rowByTown.get(feature.properties.code)
            const percentage = d.Vaccination_coverage_completed
            
-           return <path transform='translate(-900, 8185)' className='gemeente' key={d.Region_code} fill={color(percentage, colors)} d={path(feature)} />
+           return <path transform='translate(-900, 8185)' className='gemeente' key={d.Region_name} fill={color(percentage, colors)} d={path(feature)} />
        })}
     </g>
 )
