@@ -88,6 +88,7 @@ Create a client-side application in JavaScript which dynamically renders data to
 
 ### data sources
 * Vaccination data by RIVM: [vaccination](https://data.rivm.nl/covid-19/COVID-19_vaccinatiegraad_per_gemeente_per_week_leeftijd.json)
+* Topojson from the dutch [ministry of health welfare and sport](https://github.com/minvws): [topojson](https://github.com/minvws/nl-covid19-data-dashboard/blob/develop/packages/app/src/components/choropleth/logic/nl-vr-gm.topo.json)
 
 
 ## :copyright: License

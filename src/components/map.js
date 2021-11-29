@@ -3,16 +3,16 @@ import { useData } from "./useData";
 import { useWorldData } from "./useWorldData";
 import { Marks } from "./Marks";
 
-const width = 600
-const height = '89vh'
+const width = 600 // width of the svg
+const height = '89vh' // height of the svg
 
 const selectedAgeGroup = '18+'
 
 export const Towns = () => {
-    const townData = useWorldData()
-    const data = useData()
+    const townData = useWorldData() // geojson file
+    const data = useData() // vaccin data
 
-    if (!townData || !data) {
+    if (!townData || !data) { // Check if there is no data. If this is true then return a loading screen
         return <pre>Loading...</pre>
     }
 
