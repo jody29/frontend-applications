@@ -9,9 +9,8 @@
 
 .legend text {
     fill: white;
-    font-weight: bold;
 }
 
 .legendSVG {
-    transform: translate(0, 250px);
+    transform: translate(0, 245px);
 }
