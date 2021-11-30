@@ -1,0 +1,17 @@
+.legend {
+    display: flex;
+    justify-content: center;
+}
+
+.legend rect {
+    stroke: white;
+}
+
+.legend text {
+    fill: white;
+    font-weight: bold;
+}
+
+.legendSVG {
+    transform: translate(0, 250px);
+}

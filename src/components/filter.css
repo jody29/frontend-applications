@@ -1,0 +1,18 @@
+.filters {
+    display: flex;
+    margin-left: auto;
+    transform: translate(0, 10px);
+}
+
+button {
+    padding: 1em 2em;
+    font-family: sans-serif;
+    font-weight: bold;
+    outline: none;
+    border: .5px solid rgba(10px, 10px, 10px, .1);
+}
+
+
+h3 {
+    color: white;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useData } from "./useData";
 import { useWorldData } from "./useWorldData";
 import { Marks } from "./Marks";
@@ -8,6 +8,8 @@ const height = '89vh' // height of the svg
 
 const selectedAgeGroup = '18+'
 
+let colors = [{ color:'#B7FFBF', value: 50 }, { color:'#95F985', value: 60}, { color:'#4DED30', value: 70}, { color:'#0A7136', value: 80}, { color:'#02491F', value: 90}, { color:'#0B2310', value: 100}]
+
 export const Towns = () => {
     const townData = useWorldData() // geojson file
     const data = useData() // vaccin data
@@ -16,11 +18,9 @@ export const Towns = () => {
         return <pre>Loading...</pre>
     }
 
-    let colors = [{ color:'#B7FFBF', value: 50 }, { color:'#95F985', value: 60}, { color:'#4DED30', value: 70}, { color:'#0A7136', value: 80}, { color:'#02491F', value: 90}, { color:'#0B2310', value: 100}]
-
     const filteredData = data.filter(d => d.Age_group === selectedAgeGroup)
 
-    const rowByTown = new Map()
+    const rowByTown = new Map() 
 
     filteredData.forEach(d => {
         rowByTown.set(d.Region_code, d)
@@ -36,4 +36,6 @@ export const Towns = () => {
         </svg>
     )
 }
+
+export default colors
 

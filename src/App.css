@@ -5,3 +5,15 @@
 h1 {
   color: white;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translate(110px, 0);
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+}
