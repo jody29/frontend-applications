@@ -1,0 +1,9 @@
+p {
+    color: white;
+}
+
+.progres {
+    position: absolute;
+    left: 1em;
+    top: 2em;
+}

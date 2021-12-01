@@ -13,6 +13,8 @@ export const Towns = () => {
     const townData = useWorldData() // geojson file
     const data = useData() // vaccin data
     const {selectedAge} = useContext(AgeContext)
+    const {setTown} = useContext(AgeContext)
+    const {setPercentage} = useContext(AgeContext)
 
     if (!townData || !data) { // Check if there is no data. If this is true then return a loading screen
         return <pre>Loading...</pre>
@@ -26,12 +28,18 @@ export const Towns = () => {
         rowByTown.set(d.Region_code, d)
     })
 
+    const townClick = (e) => {
+        setTown(e.target.getAttribute('data_region'))
+        setPercentage(e.target.getAttribute('data_percentage'))
+    }
+
     return (
         <svg width={width} height={height}>
             <Marks
             townData={townData}
             rowByTown={rowByTown}
             colors={colors}
+            townClick={townClick}
             />
         </svg>
     )

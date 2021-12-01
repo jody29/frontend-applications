@@ -11,7 +11,8 @@ const transform = `translate(${-scale/8.3}, ${scale + 590})`
 export const Marks = ({
     townData,
     rowByTown,
-    colors
+    colors,
+    townClick
 }) => (
     <g>
        {townData.features.map(feature => {
@@ -19,7 +20,16 @@ export const Marks = ({
            const d = rowByTown.get(feature.properties.code)
            const percentage = d.Vaccination_coverage_completed
            
-           return <path transform={transform} className='gemeente' key={d.Region_name} fill={color(percentage, colors)} d={path(feature)} />
+           return <path 
+           transform={transform} 
+           className='gemeente' 
+           data_region={d.Region_name} 
+           data_percentage={d.Vaccination_coverage_completed}
+           key={d.Region_name} 
+           onClick={townClick} 
+           fill={color(percentage, colors)} 
+           d={path(feature)} 
+           />
        })}
     </g>
 )
