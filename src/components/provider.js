@@ -5,8 +5,6 @@ export const AgeContext = createContext()
 
 export function Provider({ children }) {
     const [selectedAge, setAge] = useState('18+')
-
-    console.log(selectedAge)
         
     return (
         <>
