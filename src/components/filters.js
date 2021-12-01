@@ -1,7 +1,7 @@
 import { AgeContext } from "./provider"
 import { useContext } from "react"
 
-const Filters = () => {
+export const Filters = () => {
     const {setAge} = useContext(AgeContext) // use the AgeContext provider
 
     const ageClick = (e) => {
@@ -28,5 +28,3 @@ const Filters = () => {
         </>
     )
 }
-
-export default Filters

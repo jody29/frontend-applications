@@ -4,7 +4,7 @@ import color from "../helpers/checkPercentage.js";
 import colors from "./map";
 import './progres.css'
 
-const Progres = () => { // Progress bar component
+export const Progres = () => { // Progress bar component
     const {selectedTown} = useContext(AgeContext) // selected town (when clicking on a town on the map)
     const {percentage} = useContext(AgeContext) // percentage that belongs to the selected town
 
@@ -27,5 +27,3 @@ const Progres = () => { // Progress bar component
         </>
     )
 }
-
-export default Progres

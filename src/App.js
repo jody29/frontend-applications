@@ -2,8 +2,8 @@ import './App.css';
 import { Provider } from './components/provider';
 import { Legend } from './components/legend';
 import { Towns } from './components/map'
-import Filters from './components/filters';
-import Progres from './components/progres';
+import { Filters } from './components/filters';
+import { Progres } from './components/progres';
 
 const App = () => {
   return (
