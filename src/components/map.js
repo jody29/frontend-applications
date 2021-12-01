@@ -12,9 +12,9 @@ let colors = [{ color:'#B7FFBF', value: 50 }, { color:'#95F985', value: 60}, { c
 export const Towns = () => {
     const townData = useWorldData() // geojson file
     const data = useData() // vaccin data
-    const {selectedAge} = useContext(AgeContext)
-    const {setTown} = useContext(AgeContext)
-    const {setPercentage} = useContext(AgeContext)
+    const {selectedAge} = useContext(AgeContext) // selected age which is selected in the Filter component
+    const {setTown} = useContext(AgeContext) // function that sets the town
+    const {setPercentage} = useContext(AgeContext) // function that sets the percentage of the selected town
 
     if (!townData || !data) { // Check if there is no data. If this is true then return a loading screen
         return <pre>Loading...</pre>
@@ -22,15 +22,15 @@ export const Towns = () => {
 
     const filteredData = data.filter(d => d.Age_group === selectedAge) // only view the data of the selected age group
 
-    const rowByTown = new Map() 
+    const rowByTown = new Map() // create a new Map object and store it in variable
 
-    filteredData.forEach(d => {
-        rowByTown.set(d.Region_code, d)
+    filteredData.forEach(d => { // create a d for every object that filteredData has
+        rowByTown.set(d.Region_code, d) // this will make a key-value Map which iterates in insertion order
     })
 
     const townClick = (e) => {
-        setTown(e.target.getAttribute('data_region'))
-        setPercentage(e.target.getAttribute('data_percentage'))
+        setTown(e.target.getAttribute('data_region')) // when click on a town, set the name of the town in this variabel
+        setPercentage(e.target.getAttribute('data_percentage')) // when click on a town, set the vaccination percentage in this variabel
     }
 
     return (

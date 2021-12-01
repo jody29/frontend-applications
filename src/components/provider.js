@@ -1,12 +1,12 @@
 import { createContext, useState } from 'react'
 import './filter.css'
 
-export const AgeContext = createContext()
+export const AgeContext = createContext() // create context 
 
-export function Provider({ children }) {
-    const [selectedAge, setAge] = useState('18+')
-    const [selectedTown, setTown] = useState(null)
-    const [percentage, setPercentage] = useState(null)
+export function Provider({ children }) { // create provider component
+    const [selectedAge, setAge] = useState('18+') // create context for the selectedAge with 18+ as default value
+    const [selectedTown, setTown] = useState(null) // create context for the selectedTown with null as default value
+    const [percentage, setPercentage] = useState(null) // create the percentage with null as default value
         
     return (
         <>

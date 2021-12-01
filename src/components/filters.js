@@ -2,18 +2,18 @@ import { AgeContext } from "./provider"
 import { useContext } from "react"
 
 const Filters = () => {
-    const {setAge} = useContext(AgeContext)
+    const {setAge} = useContext(AgeContext) // use the AgeContext provider
 
     const ageClick = (e) => {
-        let buttons = document.querySelectorAll('button')
-        let button = e.target
+        let buttons = document.querySelectorAll('button') // select all elements with button tag
+        let button = e.target // select the button that has been clicked
 
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].classList.remove('current')
+        for (let i = 0; i < buttons.length; i++) { // looop through the nodelist of buttons
+            buttons[i].classList.remove('current') // deleeted the class current of all the buttons
         }
 
-        setAge(e.target.value)
-        button.classList.add('current')
+        setAge(e.target.value) // set the age of the button as the selectedAge
+        button.classList.add('current') // selected button now gets the class current
         
     }
 
