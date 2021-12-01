@@ -1,18 +1,18 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { useData } from "./useData";
 import { useWorldData } from "./useWorldData";
 import { Marks } from "./Marks";
-import { AgeContext } from "./filter";
+import { AgeContext } from "./provider";
 
 const width = 600 // width of the svg
 const height = '89vh' // height of the svg
-const selectedAge = '18+'
 
 let colors = [{ color:'#B7FFBF', value: 50 }, { color:'#95F985', value: 60}, { color:'#4DED30', value: 70}, { color:'#0A7136', value: 80}, { color:'#02491F', value: 90}, { color:'#0B2310', value: 100}]
 
 export const Towns = () => {
     const townData = useWorldData() // geojson file
     const data = useData() // vaccin data
+    const {selectedAge} = useContext(AgeContext)
 
     if (!townData || !data) { // Check if there is no data. If this is true then return a loading screen
         return <pre>Loading...</pre>
