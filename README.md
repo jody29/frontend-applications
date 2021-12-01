@@ -1,6 +1,6 @@
 ### Frontend Applications
 
-# project name
+# Vaccination percentage per municipality 
 ![preview](public/react_preview.png)
 
 
