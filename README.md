@@ -29,6 +29,7 @@ $ npm start
 ```
 
 ## :pray: Wishlist
+* I wanted a filter that the user can chose if he wants to see the municipalities or the safety regions.
 
 
 ## :white_check_mark: Assignment
