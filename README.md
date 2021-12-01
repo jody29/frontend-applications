@@ -2,6 +2,7 @@
 
 # Vaccination percentage per municipality 
 ![preview](public/react_preview.png)
+[Live preview]()
 
 
 ## Table of contents
