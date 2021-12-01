@@ -1,6 +1,7 @@
 ### Frontend Applications
 
 # project name
+![preview](public/react_preview.png)
 
 
 ## Table of contents
