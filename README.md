@@ -2,7 +2,7 @@
 
 # Vaccination percentage per municipality 
 ![preview](public/react_preview.png)
-[Live preview]()
+[Live preview](https://frontend-applications-sepia.vercel.app/)
 
 
 ## Table of contents
