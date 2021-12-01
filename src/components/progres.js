@@ -1,4 +1,4 @@
-import { useContext } from "react/cjs/react.development"
+import { useContext } from "react"
 import { AgeContext } from "./provider"
 import color from "../helpers/checkPercentage.js";
 import colors from "./map";
