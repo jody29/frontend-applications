@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { useData } from "./useData";
-import { useWorldData } from "./useWorldData";
+import { useData } from "../hooks/useData";
+import { useWorldData } from "../hooks/useWorldData";
 import { Marks } from "./Marks";
 import { AgeContext } from "./provider";
 
